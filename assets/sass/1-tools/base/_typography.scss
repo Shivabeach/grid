@@ -17,17 +17,13 @@ h6 {
   margin: 0 0 $small-spacing;
 }
 
-p {
-  margin: 0 0 $small-spacing;
-}
-
 a {
-  color: $action-color;
+  color: $gray7;
   text-decoration-skip: ink;
   transition: color $base-duration $base-timing;
 
   &:hover {
-    color: shade($action-color, 25%);
+    color: $indigo5;
   }
 
   &:focus {
