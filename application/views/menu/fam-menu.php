@@ -5,7 +5,7 @@
 					<li class="inline-link">
 					<?php echo anchor("van/van_names", "Names");?></li>
 					<li class="inline-link">
-					<?php echo anchor("van/van_dna", "DNA");?></li>
+					<?php echo anchor("dna/ydna", "DNA");?></li>
 					<li class="inline-link">
 					<?php echo anchor("van/van_names", "Names");?></li>
 				</ul>

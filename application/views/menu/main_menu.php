@@ -8,6 +8,10 @@
 					<li class="inline-link">
 					<?php echo anchor("pages/bos", "Bosticks");?></li>
 					<li class="inline-link">
-					<?php echo anchor("pages/names", "Names");?></li>
+					<?php echo anchor("todolist/", "Todo");?></li>
+					<li class="inline-link">
+					<?php echo anchor("pages/data_list", "Datafile");?></li>
+					<li class="inline-link">
+					<?php echo anchor("pages/poster", "Create");?></li>
 				</ul>
 		</div>

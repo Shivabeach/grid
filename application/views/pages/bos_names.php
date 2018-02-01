@@ -1,3 +1,4 @@
+<body onLoad="showDate()">
 <div class="container">
 <div class="columns">
 	<header class="is-12 main_header">
@@ -18,30 +19,26 @@
 		</div>
 	</div>
 	<div class="is-3">
-			<?php $this->load->view("menu/fam-menu");?>
+			<?php $this->load->view("menu/bos_menu");?>
 	</div>
 </div>
 
 <div class="columns">
-	<div class="is-1"></div>
-
-	<div class="is-5">
+	<div class="is-6">
 		<?php echo heading($maname, 3);?>
 		<ul>
-			<?php foreach($male as $row):?>
-			<li class="inline-name"><?php echo $row->male_name;?></li>
-		<?php endforeach;?>
+			<?php foreach($male as $row) {
+			echo "<li class='inline-name'>$row->guys [$row->total]</li>";
+		}?>
 		</ul>
 
 	</div>
-	<div class="is-5">
+	<div class="is-6">
 		<?php echo heading($fename, 3);?>
 		<ul>
-			<?php foreach($female as $row):?>
-			<li class="inline-name"><?php echo $row->female_name;?></li>
-			<?php endforeach;?>
+			<?php foreach($female as $row) {
+			echo "<li class='inline-name'>$row->girls [$row->total]</li>";
+			}?>
 		</ul>
 	</div>
-
-	<div class="is-1"></div>
 </div>

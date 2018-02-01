@@ -48,7 +48,8 @@ class Van extends CI_Controller {
 		$data['menu'] = "Bostick Pages";
 		$data["maname"] = "Male Names";
 
-		$this->db->select("male_name");
+		$this->db->select("male_name AS guys");
+		$this->db->select('COUNT(male_name) AS total');
 		$this->db->where('family', 'Bostick');
 		$this->db->group_by('male_name');
 		//$this->db->count_all_results() ;
@@ -60,13 +61,15 @@ class Van extends CI_Controller {
 
 
 		$this->db->distinct();
-		$this->db->select("female_name");
+		$this->db->select("female_name AS girls");
+		$this->db->select('COUNT(female_name) AS total');
 		$this->db->where('family', 'Bostick');
+		$this->db->group_by('female_name');
 		$query = $this->db->get("primary");
 		if($query->result()) {
 			$data['female'] = $query->result();
 		}
-		$data['fename'] = "Female Names";
+		$data['fename'] = "Womens Names";
 		$this->load->view("template/template", $data);
 
 	}

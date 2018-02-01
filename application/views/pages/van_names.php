@@ -1,3 +1,4 @@
+<body onLoad="showDate()">
 <div class="container">
 <div class="columns">
 	<header class="is-12 main_header">

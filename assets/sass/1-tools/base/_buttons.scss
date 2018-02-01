@@ -9,7 +9,7 @@ $_button-background-color-hover: shade($action-color, 20%);
   color: contrast-switch($_button-background-color);
   cursor: pointer;
   display: inline-block;
-  font-family: $base-font-family;
+  font-family: $font-stack-garamond;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   font-weight: 600;

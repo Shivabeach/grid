@@ -1,11 +1,18 @@
 @charset "UTF-8"
 
-.inline-link
-	display: inline
-	a
-		padding: 3px 10px 3px 0
+a
+	color: $green11
+	text-decoration-skip-ink: auto
+	text-decoration-skip: ink
+	transition: all $base-duration $base-timing
 
-.inline-link:before,
-.bottom-footer:before
-	font-family: "FontAwesome"
-	content: "\f0da"
+	&:visited
+		color: $indigo55
+
+	&:hover
+		color: $indigo5
+
+	&:focus
+		outline: $focus-outline
+		outline-offset: $focus-outline-offset
+

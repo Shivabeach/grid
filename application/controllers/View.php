@@ -18,6 +18,16 @@ class View extends CI_Controller {
 
 	}
 
+	public function recent($value)
+	{
+		$this->load->model("pagesmodel");
+	}
+
+
+
+
+
+
 }
 
 /* End of file View.php */
