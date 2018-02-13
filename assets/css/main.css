@@ -783,7 +783,12 @@ a {
     outline: 3px solid rgba(21, 101, 192, 0.6);
     outline-offset: 2px; }
 
-/* file font-sizes */
+.italic {
+  font-style: italic; }
+
+.underline {
+  text-decoration: underline; }
+
 .fs-1 {
   font-size: 0.5vw; }
 
@@ -843,6 +848,75 @@ a {
 
 .fs-20 {
   font-size: 10vw; }
+
+.bold-1 {
+  font-weight: 50; }
+
+.bold-2 {
+  font-weight: 100; }
+
+.bold-3 {
+  font-weight: 150; }
+
+.bold-4 {
+  font-weight: 200; }
+
+.bold-5 {
+  font-weight: 250; }
+
+.bold-6 {
+  font-weight: 300; }
+
+.bold-7 {
+  font-weight: 350; }
+
+.bold-8 {
+  font-weight: 400; }
+
+.bold-9 {
+  font-weight: 450; }
+
+.bold-10 {
+  font-weight: 500; }
+
+.bold-11 {
+  font-weight: 550; }
+
+.bold-12 {
+  font-weight: 600; }
+
+.bold-13 {
+  font-weight: 650; }
+
+.bold-14 {
+  font-weight: 700; }
+
+.bold-15 {
+  font-weight: 750; }
+
+.bold-16 {
+  font-weight: 800; }
+
+.bold-17 {
+  font-weight: 850; }
+
+.bold-18 {
+  font-weight: 900; }
+
+.bold-19 {
+  font-weight: 950; }
+
+.bold-20 {
+  font-weight: 1000; }
+
+.italic {
+  font-style: italic; }
+
+.underline {
+  text-decoration: underline; }
+
+.element {
+  padding: 0.5rem; }
 
 /* 3 modules */
 .inline-name {

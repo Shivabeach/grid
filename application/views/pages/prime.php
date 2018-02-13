@@ -50,7 +50,7 @@
 		$fdate = nice_date($firstdate,"M d Y");
 		echo $fdate;?>
 		<br>
-		<?php if($row->last_date == "1111-11-11") {
+		<?php if($row->last_date == "") {
 			echo "";
 		}else
 		{

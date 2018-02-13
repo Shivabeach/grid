@@ -28,7 +28,7 @@
 		<?php echo heading($maname, 3);?>
 		<ul>
 			<?php foreach($male as $row) {
-			echo "<li class='inline-name'>$row->guys [$row->total]</li>";
+			echo "<li class='inline-name bold-12'>$row->guys [$row->total]</li>";
 		}?>
 		</ul>
 
@@ -37,7 +37,7 @@
 		<?php echo heading($fename, 3);?>
 		<ul>
 			<?php foreach($female as $row) {
-			echo "<li class='inline-name'>$row->girls [$row->total]</li>";
+			echo "<li class='inline-name bold-12'>$row->girls [$row->total]</li>";
 			}?>
 		</ul>
 	</div>
