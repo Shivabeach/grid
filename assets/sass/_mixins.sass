@@ -60,16 +60,6 @@
 	@return ($target/$vw-context) * 1vw
 
 
-// @function strip-units ( $length )
-// 	@return $length / (( $length * 0 ) + 1)
-
-// @function px-to-rem( $value )
-// 	$value: strip-units( $value )
-// 	$base-font-size: strip-units( $base-font-size )
-
-// 	@return( $value / $base-font-size ) * 1rem
-
-
 @function strip-units ($length)
 	$munch: $length / (( $length * 0 ) + 1)
 	@return $munch
@@ -78,3 +68,9 @@
 	$base-font-size: strip-units($base-font-size)
 	$rem: ($value/$base-font-size) * 1rem
 	@return $rem
+
+=outline($style,$color,$width,$offset)
+	outline-style: $style
+	outline-color: $color
+	outline-width: $width
+	outline-offset: $offset

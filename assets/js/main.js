@@ -90,3 +90,4 @@ $(function() {
     $("#last_date").datepicker({ dateFormat: 'yy-mm-dd' });
 });
 
+//@prepros-append script.js

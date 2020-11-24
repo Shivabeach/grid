@@ -2,5 +2,5 @@
 
 // https://www.formget.com/codeigniter-global-variable/
 
-$config['van'] = "VanHorn";
-$config['bos'] = "Bostick";
+//$config['van'] = "VanHorn";
+//$config['bos'] = "Bostick";

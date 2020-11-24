@@ -1,74 +1,29 @@
-<body onLoad="showDate()">
-<div class="container">
-<div class="columns">
-	<header class="is-12 main_header">
-		<?php echo heading($heading, 1);?>
-	</header>
-</div>
-
-<div class="columns">
-	<?php $this->load->view("menu/main_menu");?>
-	<div class="is-3">
-		<!-- first -->
-		<?php
-		echo heading("Recent updates", 4, array("class" => "center"));
-		echo "<ul>";
-		foreach($pug as $row){
-			$id = "view/index/$row->id";
-		echo "<li>" . anchor($id, $row->title). "</li>";
-		}?>
-		</ul>
-
+<body id="prime">
+	<div class="container-prime">
+		<nav>
+			<?php $this->load->view("menu/main_menu");?>
+		</nav>
+		<main>Main
+			<div id="locate"></div>
+		</main>
+		<div id="sidebar">
+			<p>Sidebar</p>
+		</div>
+		<div id="content1" class="gum-leaf">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nihil odio excepturi, hic ratione aperiam ullam eius accusantium molestiae nisi qui, officia cumque, vero quae consectetur corporis quam suscipit magni.</p>
+		</div>
+		<div id="content2" class="perano">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima unde quas perspiciatis aliquid aliquam necessitatibus, velit iure magnam autem neque.</p>
+		</div>
+		<div id="content3" class="lilac">
+			<p>Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Fuga, reprehenderit!</p>
+		</div>
+		<div id="content4" class="prim">Content 4</div>
+		<footer class="prime-foot">
+			<div id="fblock1">Footer-Block </div>
+			<div id="fblock2">Footer-Block </div>
+			<div id="fblock3">Footer-Block </div>
+		</footer>
 	</div>
-
-	<div class="is-3">
-		<!-- Second -->
-		<?php echo heading("Newest Posts", 4, array("class" => "center"));?>
-		<ul>
-		<?php foreach($mug as $row) {
-			$id = "view/index/$row->id";
-		echo "<li>" . anchor($id, $row->title). "</li>";
-		}?>
-	</ul>
-
-
-	</div>
-
-	<div class="is-3">
-		<!-- third -->
-		<script src="assets/js/datestamp.js"></script>
-	</div>
-</div>
-<?php foreach($slug as $row):?>
-<div class="columns">
-	<?php $id = "view/index/$row->id"; ?>
-	<div class="is-2 centers"><h4><?php echo anchor($id,$row->title);?></h4> </div>
-	<div class="is-8"><?php echo $row->slug;?></div>
-	<div class="is-2 small">
-		Original Date: <?php
-		$firstdate = $row->date;
-		$fdate = nice_date($firstdate,"M d Y");
-		echo $fdate;?>
-		<br>
-		<?php if($row->last_date == "") {
-			echo "";
-		}else
-		{
-			$lastdate = $row->last_date;
-			$ldate = nice_date($lastdate, "M d Y");
-			echo "Updated", nbs(2), "<span class='emp'>$ldate </span></p>";
-		}?>
-		<?php
-			$id = "admin/fill_form/$row->id";
-			if($this->session->userdata('is_logged_in') == true){
-				echo "Post # " . anchor($id, $row->id);
-			}else {
-				echo "Post # " . $row->id;
-			}
-
-			?>
-	</div>
-</div>
-<?php endforeach;?>
 
 

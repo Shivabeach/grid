@@ -11,11 +11,21 @@ h3
 
 h4
 	font-size: 1.5rem
+	margin: 5px 0
+	color: $eggs
+	font-family: $font-stack-garamond
 
 p
-	margin: 5px
+	margin: 3px 0
 	font-family: $font-stack-verdana
 	padding-top: 8px
+
+p:nth-of-type(1)::first-letter
+	font-size: 1.5rem
+	color: $Jap-painted-Flowers-5-hex
+	font-weight: 700
+	text-shadow: 1px 1px 1px $Jap-painted-Flowers-1-hex
+
 
 select
 	width: 20%
@@ -24,3 +34,8 @@ blockquote
 	border-left: 2px solid $gray7
 	margin: 1rem 2rem
 	padding-left: 10px
+
+img
+	width: 100%
+	height: 100%
+	object-fit: contain

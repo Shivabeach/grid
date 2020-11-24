@@ -1,6 +1,63 @@
 @charset "UTF-8"
 
-header
-	display: flex
-	+center(center, center)
+.container-prime
+	display: grid
+	min-height: 100vh
+	grid-template-columns: .75fr repeat(3, 1fr)
+	grid-template-rows: .3fr 1.5fr 1.2fr .8fr
+	grid-template-areas: "sidebar nav nav nav" "sidebar main main main" "sidebar content1 content2 content3" "content4 footer footer footer"
+	grid-gap: 1rem
+	width: 95%
+	margin: 0 auto
+
+.container-blog
+	display: grid
+	height: 100vh
+	grid-template-columns: repeat(4, 1fr)
+	grid-template-rows: .3fr 1.2fr 1.2fr 1fr
+	grid-template-areas: "main main nav nav" "main main content1 sidebar" "main main content2 sidebar" "footer footer content3 content4"
+	grid-gap: 1rem
+	width: 98%
+	margin: 0 auto
+
+//start here
+#container-three
+	display: grid
+	height: 100vh
+	grid-template-columns: repeat(4, 1fr)
+	grid-template-rows: .3fr 1.2fr 1.2fr 1fr
+	grid-template-areas: "nav nav nav nav" "main main content1 content1" "main main content2 sidebar" "footer footer content3 sidebar"
+	grid-gap: .5rem
+	width: 98%
+	margin: 0 auto
+
+
+
+
+
+//media queries
+@media only screen and (max-width: 750px)
+	.container-prime
+		grid-template-columns: 1fr
+		grid-template-rows: .4fr .4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr
+		grid-template-areas: "nav" "sidebar" "main" "content1" "content2" "content3" "footer"
+		grid-gap: .5rem
+
+	.link2 > li
+		padding-right: .5rem
+		display: inline
+	.link2
+		justify-self: end
+		align-self: center
+		padding-left: .5rem
+
+
+
+
+
+
+
+
+
+
 
