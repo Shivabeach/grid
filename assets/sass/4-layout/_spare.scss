@@ -1,0 +1,27 @@
+.grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 10px;
+	width: 90%;
+	margin: 0 auto;
+}
+.span-col-4 {
+	grid-column: span 4 / auto;
+}
+
+.span-col-2 {
+	grid-column: span 2 / auto;
+}
+
+.span-row-2 {
+	grid-row: span 4 / auto;
+}
+
+.span-row-2,
+.span-col-4,
+.span-col-2 {
+	border: 1px solid $yellow;
+	min-height: 4rem;
+	color: $yellow;
+	padding: 0 5px;
+}
