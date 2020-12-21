@@ -10,7 +10,10 @@ class Pages extends CI_Controller {
 		$data['header'] = "Grid Page 1";
 		$this->load->view("template/template", $data);
 	}
-
+	/**
+	 *  Blog pages for grid
+	 *  @return [type] [description]
+	 */
 	public function blog()
 	{
 		$data['content'] = "pages/blog";
@@ -24,6 +27,21 @@ class Pages extends CI_Controller {
 		$data['content'] = "pages/page3";
 		$data['title'] = "Grid Three";
 		$data['header'] = "Grid Page 3";
+		$this->load->view("template/template", $data);
+	}
+
+	public function four()
+	{
+		$data['content'] = "pages/page4";
+		$data['title'] = "Grid Four";
+		$data['header'] = "Grid Page 4";
+		$this->load->view("template/template", $data);
+	}
+	public function gen()
+	{
+		$data['content'] = "pages/generated";
+		$data['title'] = "Generated";
+		$data['header'] = "Generated";
 		$this->load->view("template/template", $data);
 	}
 

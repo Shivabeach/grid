@@ -16,5 +16,6 @@
 		</div>
 		<div id="content3" class="indigo3">Content 3</div>
 		<div id="content4" class="green3">Content4</div>
-		<footer class="lilac">Footer</footer>
+		<footer>Footer</footer>
 	</div>
+</body>

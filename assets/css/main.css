@@ -17,14 +17,6 @@ body {
   --main-radius: 5px;
 }
 
-/*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
-/*
-Document
-========
-*/
-/**
-Use a better box model (opinionated).
-*/
 *,
 *::before,
 *::after {
@@ -32,83 +24,40 @@ Use a better box model (opinionated).
           box-sizing: border-box;
 }
 
-/**
-Use a more readable tab size (opinionated).
-*/
 :root {
   -moz-tab-size: 4;
   -o-tab-size: 4;
      tab-size: 4;
 }
 
-/**
-1. Correct the line height in all browsers.
-2. Prevent adjustments of font size after orientation changes in iOS.
-*/
 html {
   line-height: 1.15;
-  /* 1 */
   -webkit-text-size-adjust: 100%;
-  /* 2 */
 }
 
-/*
-Sections
-========
-*/
-/**
-Remove the margin in all browsers.
-*/
 body {
   margin: 0;
 }
 
-/**
-Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
-*/
 body {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
-/*
-Grouping content
-================
-*/
-/**
-1. Add the correct height in Firefox.
-2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
-*/
 hr {
   height: 0;
-  /* 1 */
   color: inherit;
-  /* 2 */
 }
 
-/*
-Text-level semantics
-====================
-*/
-/**
-Add the correct text decoration in Chrome, Edge, and Safari.
-*/
 abbr[title] {
   -webkit-text-decoration: underline dotted;
           text-decoration: underline dotted;
 }
 
-/**
-Add the correct font weight in Edge and Safari.
-*/
 b,
 strong {
   font-weight: bolder;
 }
 
-/**
-1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
-2. Correct the odd 'em' font sizing in all browsers.
-*/
 code,
 kbd,
 samp,
@@ -119,16 +68,10 @@ pre {
   /* 2 */
 }
 
-/**
-Add the correct font size in all browsers.
-*/
 small {
   font-size: 80%;
 }
 
-/**
-Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
-*/
 sub,
 sup {
   font-size: 75%;
@@ -145,57 +88,28 @@ sup {
   top: -0.5em;
 }
 
-/*
-Tabular data
-============
-*/
-/**
-1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
-2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
-*/
 table {
   text-indent: 0;
-  /* 1 */
   border-color: inherit;
-  /* 2 */
 }
 
-/*
-Forms
-=====
-*/
-/**
-1. Change the font styles in all browsers.
-2. Remove the margin in Firefox and Safari.
-*/
 button,
 input,
 optgroup,
 select,
 textarea {
   font-family: inherit;
-  /* 1 */
   font-size: 100%;
-  /* 1 */
   line-height: 1.15;
-  /* 1 */
   margin: 0;
-  /* 2 */
 }
 
-/**
-Remove the inheritance of text transform in Edge and Firefox.
-1. Remove the inheritance of text transform in Firefox.
-*/
 button,
 select {
   /* 1 */
   text-transform: none;
 }
 
-/**
-Correct the inability to style clickable types in iOS and Safari.
-*/
 button,
 [type=button],
 [type=reset],
@@ -203,87 +117,46 @@ button,
   -webkit-appearance: button;
 }
 
-/**
-Remove the inner border and padding in Firefox.
-*/
 ::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-/**
-Restore the focus styles unset by the previous rule.
-*/
 :-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-/**
-Remove the additional ':invalid' styles in Firefox.
-See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
-*/
 :-moz-ui-invalid {
   box-shadow: none;
 }
 
-/**
-Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
-*/
 legend {
   padding: 0;
 }
 
-/**
-Add the correct vertical alignment in Chrome and Firefox.
-*/
 progress {
   vertical-align: baseline;
 }
 
-/**
-Correct the cursor style of increment and decrement buttons in Safari.
-*/
 ::-webkit-inner-spin-button,
 ::-webkit-outer-spin-button {
   height: auto;
 }
 
-/**
-1. Correct the odd appearance in Chrome and Safari.
-2. Correct the outline style in Safari.
-*/
 [type=search] {
   -webkit-appearance: textfield;
-  /* 1 */
   outline-offset: -2px;
-  /* 2 */
 }
 
-/**
-Remove the inner padding in Chrome and Safari on macOS.
-*/
 ::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/**
-1. Correct the inability to style clickable types in iOS and Safari.
-2. Change font properties to 'inherit' in Safari.
-*/
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
-  /* 1 */
   font: inherit;
-  /* 2 */
 }
 
-/*
-Interactive
-===========
-*/
-/*
-Add the correct display in Chrome and Safari.
-*/
 summary {
   display: list-item;
 }
@@ -363,14 +236,18 @@ body {
 }
 
 h1 {
-  font-size: 12vw;
+  font-size: 2.5rem;
   margin-bottom: 0.3em;
   font-family: dulcelin;
 }
 
 h2 {
-  font-size: 6vw;
+  font-size: 2rem;
   margin-bottom: 0.3em;
+}
+
+h3 {
+  font-size: 1.75rem;
 }
 
 h4 {
@@ -378,6 +255,14 @@ h4 {
   margin: 5px 0;
   color: #b2864f;
   font-family: "Garamond", "Baskerville", "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
 }
 
 p {
@@ -406,8 +291,17 @@ blockquote {
 img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+  color: #40c057;
 }
 
 a {
@@ -423,6 +317,10 @@ a:hover {
 }
 a:active {
   color: #BF877A;
+}
+
+.current {
+  background: #cfd8dc;
 }
 
 .italic {
@@ -450,6 +348,10 @@ a:active {
 
 .fixed {
   display: fixed;
+}
+
+.bolded {
+  font-weight: 800;
 }
 
 .perano {
@@ -501,6 +403,11 @@ a:active {
 }
 
 /* 3 modules */
+#dayOfWeek {
+  font-weight: 800;
+  color: #000;
+}
+
 .link2 {
   -ms-grid-column-align: end;
       justify-self: end;
@@ -513,6 +420,11 @@ a:active {
 .link2 > li {
   padding-right: 2rem;
   display: inline;
+}
+
+.hover {
+  background-color: #C17C56;
+  color: #000;
 }
 
 .centers {
@@ -534,6 +446,17 @@ a:active {
 .grad-orange {
   background: -o-linear-gradient(315deg, #fad961 0%, #f98b4d 100%);
   background: linear-gradient(135deg, #fad961 0%, #f98b4d 100%);
+}
+
+/**
+ * *  Dates and times
+ * */
+#timeless {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  width: 10%;
+  text-align: center;
+  font-size: 1.5em;
 }
 
 .grad-orange {
@@ -598,6 +521,20 @@ a:active {
   margin: 0 auto;
 }
 
+#container-four {
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  -ms-grid-columns: 1fr 0.5rem 1fr 0.5rem 1fr 0.5rem 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: 0.3fr 0.5rem 1fr 0.5rem 1fr 0.5rem 1fr;
+  grid-template-rows: 0.3fr repeat(3, 1fr);
+      grid-template-areas: "nav nav content3 content3" "main main content1 content1" "main main content1 content1" "footer footer content2 content2";
+  grid-gap: 0.5rem;
+  width: 98%;
+  margin: 0 auto;
+}
+
 @media only screen and (max-width: 750px) {
   .container-prime {
     -ms-grid-columns: 1fr;
@@ -640,6 +577,12 @@ main {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
 }
+#container-four > main {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+}
 
 nav {
   -ms-grid-row: 1;
@@ -660,6 +603,12 @@ nav {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 7;
+}
+
+#container-four > nav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
 }
 
 #sidebar {
@@ -699,6 +648,13 @@ nav {
   -ms-grid-column-span: 3;
 }
 
+#container-four > #content1 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 3;
+}
+
 #content2 {
   -ms-grid-row: 5;
   -ms-grid-column: 5;
@@ -715,6 +671,12 @@ nav {
   -ms-grid-column: 5;
 }
 
+#container-four > #content2 {
+  -ms-grid-row: 7;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 3;
+}
+
 #content3 {
   -ms-grid-row: 5;
   -ms-grid-column: 7;
@@ -729,6 +691,12 @@ nav {
 #container-three > #content3 {
   -ms-grid-row: 7;
   -ms-grid-column: 5;
+}
+
+#container-four > #content3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 3;
 }
 
 #content4 {
@@ -761,6 +729,12 @@ footer {
   -ms-grid-column-span: 3;
 }
 
+#container-four > footer {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+}
+
 @media only screen and (max-width: 750px){
   main {
     -ms-grid-row: 5;
@@ -780,16 +754,19 @@ footer {
   }
   #content1 {
     -ms-grid-row: 7;
+    -ms-grid-row-span: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
   }
   #content2 {
     -ms-grid-row: 9;
     -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
   }
   #content3 {
     -ms-grid-row: 11;
     -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
   }
   footer {
     -ms-grid-row: 13;
@@ -838,6 +815,40 @@ main,
   min-height: 100%;
 }
 
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.span-col-4 {
+  -ms-grid-column-span: 4;
+  grid-column: span 4/auto;
+}
+
+.span-col-2 {
+  -ms-grid-column-span: 2;
+  grid-column: span 2/auto;
+}
+
+.span-row-2 {
+  -ms-grid-row-span: 4;
+  grid-row: span 4/auto;
+}
+
+.span-row-2,
+.span-col-4,
+.span-col-2 {
+  border: 1px solid #ffff00;
+  min-height: 4rem;
+  color: #ffff00;
+  padding: 0 5px;
+}
+
 .container {
   background: #8C353D;
 }
@@ -882,5 +893,14 @@ footer.prime-foot {
 
 .mori {
   background-image: url("../images/SenaeMori.jpg");
+  background-repeat: no-repeat;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#content4,
+footer {
+  background-image: url("../images/tile8.jpg");
+  background-repeat: repeat;
 }
 /*# sourceMappingURL=main.css.map */
