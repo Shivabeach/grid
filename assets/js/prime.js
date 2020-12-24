@@ -4,6 +4,12 @@
  */
 'use strict';
 
+const limit1 = {
+	balance: 500,
+	withdrawls: [10, 25, 30],
+	inputs: [25, 50, 60, 14],
+};
+
 const displayArray = document.querySelector('.displayArray');
 const displayNumberAdded = document.querySelector('.displayNumberAdded');
 const reduced = document.querySelector('.reduced');
@@ -37,8 +43,8 @@ function addItUp() {
 
 function mapping() {
 	let newArray = theArray
-		.filter((arr) => arr > 1)
-		.map((arr) => arr * 2)
+		.filter((arr) => arr > 10)
+		.map((arr) => arr * 3)
 		.reduce((arr, cur) => arr + cur, 0);
 	clipped.innerHTML = newArray;
 }

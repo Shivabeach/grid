@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 html,
 body {
   -webkit-box-sizing: border-box;
@@ -478,6 +477,31 @@ a:active {
   background-color: rgba(255, 255, 255, 0.4);
 }
 
+/**
+ * *  Javascript modules
+ * */
+.aright {
+  text-align: right;
+  font-size: 1.7rem;
+}
+
+.balance {
+  font-weight: 800;
+  text-decoration: underline;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+
+.withdraw, .insert {
+  background-color: #fd7e14;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+.insert {
+  background-color: #40c057;
+}
+
 /* 4 layout */
 .container-prime {
   display: -ms-grid;
@@ -533,6 +557,32 @@ a:active {
   grid-gap: 0.5rem;
   width: 98%;
   margin: 0 auto;
+}
+
+.mainContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: 1px solid red;
+}
+
+#left {
+  border-right: 1px silver solid;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 @media only screen and (max-width: 750px) {
@@ -735,7 +785,7 @@ footer {
   -ms-grid-column-span: 3;
 }
 
-@media only screen and (max-width: 750px){
+@media only screen and (max-width: 750px) {
   main {
     -ms-grid-row: 5;
     -ms-grid-row-span: 1;

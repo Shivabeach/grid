@@ -5,6 +5,26 @@
 		</nav>
 		<main class="miki">
 			<div id="locate"></div>
+			<div class="mainContainer">
+				<div id="left">
+					<h3>Movements</h3>
+					<div class="aright">Balance: <span class="balance"> </span></div>
+				</div>
+				<div id="right">
+					<div>Brad, Bill, Kathy, Glenn</div>
+					<div class="form">
+						<form class="form">
+							<input type="text" class="inputName">
+							<button type="submit" id="login">Login</button>
+						</form>
+					</div>
+					<div class="welcome"></div>
+					<h3>Current account Info</h3>
+					<div class="name"></div>
+					<div class="age"></div>
+
+				</div>
+			</div>
 		</main>
 		<div id="sidebar">Sidebar</div>
 		<div id="content1" class="indigo3">
@@ -23,4 +43,5 @@
 		</div>
 		<footer class="lilac">Footer</footer>
 	</div>
+	<script src="<?php echo base_url('assets/js/page3.js');?>" defer></script>
 </body>

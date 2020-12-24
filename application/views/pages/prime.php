@@ -5,6 +5,19 @@
 		</nav>
 		<main>Main
 			<div id="locate"></div>
+			<p>function addItUp() {<br>
+	let totals = theArray.reduce((arr, cur) => arr + cur, 0);<br>
+	reduced.innerHTML = totals;<br>
+}</p>
+			<p>function maxNum() {<br>
+				const maxx = theArray.reduce((acc, cur, i, arr) => (acc > cur ? acc : cur),10,);<br>
+				max.innerHTML = maxx;<br>
+				}</p>
+				<p>
+					currentAccount = accounts.find(acc => acc.username === inputLoginUsername.value<br>
+  				);
+				</p>
+
 		</main>
 		<div id="sidebar">
 			<p>Sidebar</p>
@@ -13,14 +26,15 @@
 			<h3>Vinegars</h3>
 			<hr>
 			<ol>
-				<li>Raisen Vinegar - 10/18/2020 - 3.56 ph</li>
+				<li>Raisin Vinegar - 10/18/2020 - 3.56 ph</li>
 				<li>Mango Vinegar  - 10/18/2020 - 3.33 ph</li>
 				<li>Cherry Vinegar - 11/7/2020  - 3.88 ph</li>
-				<li>Raisen Vinegar - 11/22/2020 - 3.55 ph</li>
+				<li>Raisin Vinegar - 11/22/2020 - 3.55 ph</li>
 			</ol>
 		</div>
 		<div id="content2" class="perano">
-			<p>Our sun is traveling at 507784mph around the galaxy</p>
+			<p>Our sun is traveling at 507,784 mph around the galaxy</p>
+			<p>This translates to 44,684,992 feet per minute </p>
 		</div>
 		<div id="content3" class="lilac">
 			<form action="">
