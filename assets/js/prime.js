@@ -9,14 +9,18 @@ const limit1 = {
 	withdrawls: [10, 25, 30],
 	inputs: [25, 50, 60, 14],
 };
-
+document.documentURI;
 const displayArray = document.querySelector('.displayArray');
 const displayNumberAdded = document.querySelector('.displayNumberAdded');
 const reduced = document.querySelector('.reduced');
 const submit = document.querySelector('.submit');
 let clipped = document.querySelector('.clipped');
 const max = document.querySelector('.max');
+const docurl = document.getElementById('fblock1');
 let theArray = [21, 20, -30, -10, 20, 45, 4];
+
+const here = document.documentURI;
+docurl.innerText = here;
 
 // utilities at startup
 addEventListener('DOMContentLoaded', () => {

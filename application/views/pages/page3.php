@@ -8,21 +8,42 @@
 			<div class="mainContainer">
 				<div id="left">
 					<h3>Movements</h3>
-					<div class="aright">Balance: <span class="balance"> </span></div>
+					<div class="aright">Balance: <span class="balance"></span></div>
+					<div id="displayMov">
+						<div class="bottom-in">
+							<div class="movements-in">
+								<div class="movements__type movements__type--deposit"></div>
+								<div class="movements__value"></div>
+								<div class="movements-in">
+									<div class="movements__type movements__type--withdrawal"></div>
+									<div class="movements__value"></div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div id="right">
-					<div>Brad, Bill, Kathy, Glenn</div>
+					<h3>Current account Info</h3>
 					<div class="form">
 						<form class="form">
-							<input type="text" class="inputName">
+							<?php $tags = [
+								"class" => "inputName"
+							];
+							$arg = [
+								"Brad" => "Brad",
+								"Bill" => "Bill",
+								"Kathy" => "Kathy",
+								"Glenn" => "Glenn"
+							];
+							echo form_dropdown($tags, $arg )
+							?>
 							<button type="submit" id="login">Login</button>
 						</form>
 					</div>
-					<div class="welcome"></div>
-					<h3>Current account Info</h3>
+					<div class="bottom-out">WithDrawals: <span class="withdraw"></span></div>
+					<div class="bottom-in">Deposits: <span class="deposit"></span></div>
 					<div class="name"></div>
 					<div class="age"></div>
-
 				</div>
 			</div>
 		</main>
@@ -30,8 +51,6 @@
 		<div id="content1" class="indigo3">
 			<div id="timeless" class="bolded"></div>
 			<div class="responce"></div>
-
-
 		</div>
 		<div id="content2" class="green5">
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum modi, a veniam quis nobis sunt impedit officiis delectus dignissimos quidem velit nihil porro aut facere sapiente? Eveniet obcaecati blanditiis quo quisquam voluptate ut doloremque quasi a, repellat veritatis, harum vitae.</p>
@@ -39,9 +58,8 @@
 		</div>
 		<div id="content3" class="deco">
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum modi, a veniam quis nobis sunt impedit officiis delectus dignissimos quidem velit nihil porro aut facere sapiente? Eveniet obcaecati blanditiis quo quisquam voluptate ut doloremque quasi a, repellat veritatis, harum vitae.</p>
-
 		</div>
-		<footer class="lilac">Footer</footer>
-	</div>
-	<script src="<?php echo base_url('assets/js/page3.js');?>" defer></script>
+	<footer class="lilac">Footer</footer>
+</div>
+<script src="<?php echo base_url('assets/js/page3.js');?>" defer></script>
 </body>

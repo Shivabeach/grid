@@ -51,7 +51,7 @@
 		</div>
 		<div id="content4" class="prim">Content 4</div>
 		<footer class="prime-foot">
-			<div id="fblock1">Footer-Block </div>
+			<div id="fblock1"> </div>
 			<div id="fblock2">Footer-Block </div>
 			<div id="fblock3">Footer-Block </div>
 		</footer>
