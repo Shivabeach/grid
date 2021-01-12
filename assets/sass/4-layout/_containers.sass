@@ -23,9 +23,9 @@
 //start here
 #container-three
 	display: grid
-	height: 100vh
+	height: 100%
 	grid-template-columns: repeat(4, 1fr)
-	grid-template-rows: .3fr 1.2fr 1.2fr 1fr
+	grid-template-rows: .3fr 1.2fr 1.2fr 3fr
 	grid-template-areas: "nav nav nav nav" "main main content1 content1" "main main content2 sidebar" "main main content3 sidebar"
 	grid-gap: .5rem
 	width: 98%
@@ -36,7 +36,7 @@
 	height: 100vh
 	grid-template-columns: repeat(4, 1fr)
 	grid-template-rows: .3fr repeat(3, 1fr)
-	grid-template-areas: "nav nav content3 content3" "main main content1 content1" "main main content1 content1" "footer footer content2 content2"
+	grid-template-areas: "nav nav content3 content3" "main main content1 content1" "main main content1 content1" "main main content2 content2"
 	grid-gap: .5rem
 	width: 98%
 	margin: 0 auto

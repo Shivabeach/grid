@@ -14,14 +14,15 @@
 							<div class="movements-in">
 								<div class="movements__type movements__type--deposit"></div>
 								<div class="movements__value"></div>
-								<div class="movements-in">
-									<div class="movements__type movements__type--withdrawal"></div>
-									<div class="movements__value"></div>
-								</div>
+							</div>
+							<div class="movements-in">
+								<div class="movements__type movements__type--withdrawal"></div>
+								<div class="movements__value"></div>
+							</div>
 							</div>
 						</div>
 					</div>
-				</div>
+
 				<div id="right">
 					<h3>Current account Info</h3>
 					<div class="form">
@@ -58,8 +59,8 @@
 		</div>
 		<div id="content3" class="deco">
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum modi, a veniam quis nobis sunt impedit officiis delectus dignissimos quidem velit nihil porro aut facere sapiente? Eveniet obcaecati blanditiis quo quisquam voluptate ut doloremque quasi a, repellat veritatis, harum vitae.</p>
+			<p class="copy"></p>
 		</div>
-	<footer class="lilac">Footer</footer>
 </div>
 <script src="<?php echo base_url('assets/js/page3.js');?>" defer></script>
 </body>

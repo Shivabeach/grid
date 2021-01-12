@@ -17,17 +17,15 @@ const submit = document.querySelector('.submit');
 let clipped = document.querySelector('.clipped');
 const max = document.querySelector('.max');
 const docurl = document.getElementById('fblock1');
+const docmode = document.getElementById('fblock2');
+
 let theArray = [21, 20, -30, -10, 20, 45, 4];
 
 const here = document.documentURI;
 docurl.innerText = here;
 
 // utilities at startup
-addEventListener('DOMContentLoaded', () => {
-	displayArray.innerText = theArray;
-	added.value = '';
-	addItUp();
-});
+
 //push to array
 function addToArray(added) {
 	if (added != '') {
@@ -67,6 +65,11 @@ function maxNum() {
 function clear() {
 	added.value = '';
 }
+addEventListener('DOMContentLoaded', () => {
+	displayArray.innerText = theArray;
+	added.value = '';
+	addItUp();
+});
 
 submit.addEventListener('click', (e) => {
 	e.preventDefault();
