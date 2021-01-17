@@ -4,6 +4,7 @@
 
 'use strict';
 // using a dataset attribute
+// div id="theDiv" data-name="Brad" data-car="Mustang"
 const sets = document.getElementById('theDiv');
 const name = sets.dataset.name;
 const car = sets.dataset.car;

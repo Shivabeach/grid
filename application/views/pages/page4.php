@@ -4,27 +4,48 @@
 			<?php $this->load->view("menu/main_menu");?>
 		</nav>
 		<main class="miki">
-			<div id="locate"></div>
-
 			<form action="">
 				<input type="text" class="inputs" id="inserts">
 				<button type="submit" id="submit" class="submit" value="Submit">Submit</button>
 			</form>
 			<div class="showLength"></div>
 			<div id="active"></div>
+			<div id="break25">
+				<div class="break1-1">1-1</div>
+				<div class="break1-2">1-2</div>
+				<div class="break1-3">1-3</div>
+				<div class="break1-4">1-4</div>
+				<div class="break1-5">1-5</div>
+				<div class="break1-6">1.6</div>
+			</div>
+			<div id="break1">
+				<div class="break2-1">2-1</div>
+				<div class="break2-2">2-2</div>
+				<div class="break2-3">2-3</div>
+				<div class="break2-4">2-4</div>
+				<div class="break2-5">2-5</div>
+				<div class="break2-6">2-6</div>
+			</div>
+			<div id="break">
+				<p class="black">saepe cumque omnis doloribus, officiis, sit exercitationem architecto, qui ipsum?</p>
+			</div>
+
 		</main>
-		<div id="content3" class="kobi">Content 3</div>
+
+		<div id="content3" class="kobi"><div id="locate"></div></div>
 
 		<div id="content1" class="indigo3">
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum modi, a veniam quis nobis sunt impedit officiis delectus dignissimos quidem velit nihil porro aut facere sapiente? Eveniet obcaecati blanditiis quo quisquam voluptate ut doloremque quasi a, repellat veritatis, harum vitae.</p>
+			content 1
+
 			<div id="theDiv" data-name="Brad" data-car="Mustang">
-				This is a dataset example
+				<p>This is a dataset example</p>
 			</div>
 
 		</div>
 
 		<div id="content2" class="green5">
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum modi, a veniam quis nobis sunt impedit officiis delectus dignissimos quidem velit nihil porro aut facere sapiente? Eveniet obcaecati blanditiis quo quisquam voluptate ut doloremque quasi a, repellat veritatis, harum vitae.</p>
+			content 2
+
 			<p>Using a dataset property in a paragraph(see above section)</p>
 
 			const sets = document.getElementById('theDiv');<br>

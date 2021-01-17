@@ -63,10 +63,10 @@ const characters = [
 //***MAP***
 //1. Get array of all names
 const name = characters.map((character) => character.name);
-m1.innerHTML = JSON.stringify(name);
+m1.innerHTML = name.toString();
 //2. Get array of all heights
 const high = characters.map((character) => character.height);
-m2.innerHTML = JSON.stringify(high);
+m2.innerHTML = high.toString();
 //3. Get array of objects with just name and height properties//
 const minified = characters.map((character) => ({
 	name: character.name,
@@ -75,7 +75,7 @@ const minified = characters.map((character) => ({
 m3.innerText = JSON.stringify(minified);
 //4. Get array of all first names
 const firstName = characters.map((character) => character.name.split(' ')[0]);
-m4.innerText = JSON.stringify(firstName);
+m4.innerText = firstName.toString();
 
 //***REDUCE***
 //1. Get total mass of all characters
@@ -96,6 +96,11 @@ const charactersByEyeColor = characters.reduce((acc, cur) => {
 }, {});
 r3.innerText = JSON.stringify(charactersByEyeColor);
 //4. Get total number of characters in all the character names
+const totalNameCharacters = characters.reduce(
+	(acc, cur) => acc + cur.name.length,
+	0,
+);
+r4.innerText = totalNameCharacters;
 
 //***FILTER***
 //1. Get characters with mass greater than 100
@@ -136,9 +141,19 @@ sort4.innerText = JSON.stringify(byGender);
 
 //***EVERY***
 //1. Does every character have blue eyes?
+const allBlueEyes = characters.every(
+	(character) => character.eye_color === 'blue',
+);
+e1.innerText = allBlueEyes;
 //2. Does every character have mass more than 40?
+const allMassGreater40 = characters.every((character) => character.mass > 40);
+e2.innerText = allMassGreater40;
 //3. Is every character shorter than 200?
+const allShorter200 = characters.every((character) => character.height < 200);
+e3.innerText = allShorter200;
 //4. Is every character male?
+const allMale = characters.every((character) => character.gender === 'male');
+e4.innerText = allMale;
 
 //***SOME***
 //1. Is there at least one male character?
@@ -156,17 +171,3 @@ s3.innerText = taller200;
 //4. Is there at least one character that has mass less than 50?
 const mass50 = characters.some((character) => character.mass < 50);
 s4.innerText = mass50;
-
-// const mini2 = Object.values(characters);
-// all.innerHTML = JSON.stringify(mini2);
-
-// const names1 = characters.map((character) => character.height);
-// console.log(names1);
-// height.innerHTML = names1;
-
-// const first = characters.map((character) => character.name.split(' ')[0]);
-// first1.innerHTML = JSON.stringify(first);
-
-//some
-//
-// true or false

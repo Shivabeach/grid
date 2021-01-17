@@ -683,6 +683,7 @@ main {
   -ms-grid-column: 3;
   -ms-grid-column-span: 5;
   grid-area: main;
+  position: relative;
 }
 .container-blog > main {
   -ms-grid-row: 1;
@@ -958,6 +959,40 @@ main,
 
 p {
   color: #ECD0C2;
+}
+
+#break {
+  position: absolute;
+  top: 75%;
+  left: 1rem;
+  right: 1rem;
+  border-top: 2px dotted #000;
+}
+
+#break1 {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  right: 1rem;
+  border-top: 2px dotted #000;
+}
+#break1 p {
+  color: #000;
+}
+
+#break25 {
+  position: absolute;
+  top: 25%;
+  left: 1rem;
+  right: 1rem;
+  border-top: 2px dotted #000;
+}
+#break25 p {
+  color: #000;
+}
+
+.black {
+  color: #000;
 }
 
 .container {

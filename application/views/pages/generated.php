@@ -20,9 +20,9 @@
           <div id="r1"></div>
           <p>Get the total height of all characters</p>
           <div id="r2"></div>
-          <p>Get the total number of characters in all the character names</p>
-          <div id="r3"></div>
           <p>Get the total number of characters by eye color (hint. a map of eye color to count)</p>
+          <div id="r3"></div>
+          <p>Get the total number of characters in all the character names</p>
           <div id="r4"></div>
         </p>
         <p>FILTER<br>
