@@ -10,6 +10,4 @@
 	<?php echo anchor("pages/four", "Page 4");?></li>
 	<li>
 	<?php echo anchor("pages/gen", "Generated");?></li>
-	<li>
-	<?php echo anchor("pages/poster", "Create");?></li>
 </ul>

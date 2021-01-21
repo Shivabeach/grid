@@ -17,7 +17,7 @@ const moveIn = document.querySelector('.bottom-in');
 
 // copyright
 let yer = new Date();
-copyr.innerHTML = `\u00A9 ${yer.getFullYear()}`;
+copyr.innerHTML = `\u00A92019 - ${yer.getFullYear()}`; //copywright
 const limit1 = {
 	name: 'Brad',
 	age: 21,

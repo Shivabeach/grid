@@ -4,19 +4,18 @@
 			<?php $this->load->view("menu/main_menu");?>
 		</nav>
 		<main class="miki">
-			<form action="">
+			<form action="" class="relate">
+				<label for="inserts">Insert</label>
 				<input type="text" class="inputs" id="inserts">
 				<button type="submit" id="submit" class="submit" value="Submit">Submit</button>
 			</form>
+			<button id="shift">Shift Array</button>
+			<p></p>
+			<div id="space"></div>
 			<div class="showLength"></div>
-			<div id="active"></div>
+
 			<div id="break25">
-				<div class="break1-1">1-1</div>
-				<div class="break1-2">1-2</div>
-				<div class="break1-3">1-3</div>
-				<div class="break1-4">1-4</div>
-				<div class="break1-5">1-5</div>
-				<div class="break1-6">1.6</div>
+				<div class="break1-1"></div>
 			</div>
 			<div id="break1">
 				<div class="break2-1">2-1</div>
@@ -27,7 +26,10 @@
 				<div class="break2-6">2-6</div>
 			</div>
 			<div id="break">
-				<p class="black">saepe cumque omnis doloribus, officiis, sit exercitationem architecto, qui ipsum?</p>
+				<div class="form">
+				<input type="text" id="email" class="form__input" autocomplete="off" placeholder=" ">
+				<label for="email" class="form__label">EMAIL</label>
+			</div>
 			</div>
 
 		</main>

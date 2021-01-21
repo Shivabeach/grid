@@ -1,0 +1,36 @@
+.form
+	position: relative
+	width: 20rem
+
+	&__input
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		border: 3px solid $milano-red
+		border-radius: 1px
+		padding: 1.25rem
+		+outline(dashed,green,2px,5px)
+		&:hover
+			border-color: $yellow
+		&:focus
+			border-color: $green7
+	&__label
+		position: absolute
+		left: 1rem
+		top: 1rem
+		padding: 0 0.5rem
+		curser: text
+		transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in
+		background: none
+		font-size: 1.2rem
+
+.form__input:focus ~ .form__label, .form__input:not(:placeholder-shown)
+	.form__input:not(:focus) ~ .form__label
+	top: -.5rem
+	font-size: .8rem
+	left: .8rem
+	background: linear-gradient(#F6F1EC, #fff)
+
+
+

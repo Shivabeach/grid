@@ -957,10 +957,6 @@ main,
   padding: 0 5px;
 }
 
-p {
-  color: #ECD0C2;
-}
-
 #break {
   position: absolute;
   top: 75%;
@@ -980,6 +976,12 @@ p {
   color: #000;
 }
 
+.break1-1 > li {
+  display: inline;
+  padding-left: 1rem;
+  font-weight: 800;
+}
+
 #break25 {
   position: absolute;
   top: 25%;
@@ -995,6 +997,64 @@ p {
   color: #000;
 }
 
+.form {
+  position: relative;
+  width: 20rem;
+}
+.form__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 3px solid #D21600;
+  border-radius: 1px;
+  padding: 1.25rem;
+  outline-style: dashed;
+  outline-color: green;
+  outline-width: 2px;
+  outline-offset: 5px;
+}
+.form__input:hover {
+  border-color: #ffff00;
+}
+.form__input:focus {
+  border-color: #37b24d;
+}
+.form__label {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  padding: 0 0.5rem;
+  curser: text;
+  -webkit-transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+  -o-transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+  transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+  background: none;
+  font-size: 1.2rem;
+}
+
+.form__input:not(:-moz-placeholder-shown) {
+  top: -0.5rem;
+  font-size: 0.8rem;
+  left: 0.8rem;
+  background: linear-gradient(#F6F1EC, #fff);
+}
+
+.form__input:not(:-ms-input-placeholder) {
+  top: -0.5rem;
+  font-size: 0.8rem;
+  left: 0.8rem;
+  background: linear-gradient(#F6F1EC, #fff);
+}
+
+.form__input:focus ~ .form__label, .form__input:not(:placeholder-shown) {
+  top: -0.5rem;
+  font-size: 0.8rem;
+  left: 0.8rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F6F1EC), to(#fff));
+  background: -o-linear-gradient(#F6F1EC, #fff);
+  background: linear-gradient(#F6F1EC, #fff);
+}
 .container {
   background: #8C353D;
 }
