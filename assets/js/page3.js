@@ -3,7 +3,7 @@
  *  \u0024 dollar sign
  */
 'use strict';
-const copyr = document.querySelector('.copy');
+
 const name = document.querySelector('.name');
 const age = document.querySelector('.age');
 const balance = document.querySelector('.balance');
@@ -16,8 +16,7 @@ const left = document.getElementById('left');
 const moveIn = document.querySelector('.bottom-in');
 
 // copyright
-let yer = new Date();
-copyr.innerHTML = `\u00A92019 - ${yer.getFullYear()}`; //copywright
+
 const limit1 = {
 	name: 'Brad',
 	age: 21,

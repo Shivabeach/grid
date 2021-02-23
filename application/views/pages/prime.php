@@ -3,21 +3,21 @@
 		<nav>
 			<?php $this->load->view("menu/main_menu");?>
 		</nav>
-		<main>Main
-			<div id="locate"></div>
+		<main>
+			<div>Main</div>
+			<div class="prime"></div>
 			<p>function addItUp() {<br>
-	let totals = theArray.reduce((arr, cur) => arr + cur, 0);<br>
-	reduced.innerHTML = totals;<br>
-}</p>
+				let totals = theArray.reduce((arr, cur) => arr + cur, 0);<br>
+				reduced.innerHTML = totals;<br>
+			}</p>
 			<p>function maxNum() {<br>
 				const maxx = theArray.reduce((acc, cur, i, arr) => (acc > cur ? acc : cur),10,);<br>
 				max.innerHTML = maxx;<br>
-				}</p>
-				<p>
-					currentAccount = accounts.find(acc => acc.username === inputLoginUsername.value<br>
-  				);
-				</p>
-
+			}</p>
+			<p>
+				currentAccount = accounts.find(acc => acc.username === inputLoginUsername.value<br>
+				);
+			</p>
 		</main>
 		<div id="sidebar">
 			<p>Sidebar</p>
@@ -41,21 +41,24 @@
 				<input type="text" id="added">
 				<button type="submit" class="submit">Submit</button>
 			</form>
-
 			<div>Array: <span class="displayArray"></span> </div>
 			<div>Number added: <span class="displayNumberAdded"></span></div>
 			<div>Reduced: <span class="reduced"></span>  </div>
 			<div>Mapped and filtered: <span class="clipped"> </span></div>
 			<div>Max: <span class="max"></span></div>
-
 		</div>
 		<div id="content4" class="prim">Content 4</div>
 		<footer class="prime-foot">
-			<div id="fblock1"> </div>
-			<div id="fblock2">Footer-Block </div>
-			<div id="fblock3">Footer-Block </div>
+			<div id="fblock1"> <span>fblock1</span></div>
+			<div id="fblock2">Footer-Block #fblock2
+				<p class="copy"></p>
+			</div>
+			<div id="fblock3">
+			Footer-Block #fblock3
+			<div class="random"></div>
+
+			</div>
 		</footer>
 	</div>
-	<script src="<?php echo base_url('assets/js/prime-dist.js');?>""></script>
+	<script src="<?php echo base_url('assets/js/prime-dist.js');?>" defer></script>
 </body>
-

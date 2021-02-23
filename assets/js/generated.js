@@ -1,3 +1,4 @@
+/** James Quick https://www.youtube.com/watch?v=3LOEGS4qcRM&list=PLDlWc9AfQBfZGZXFb_1tcRKwtCavR7AfT&index=1&t=8s */
 'use strict';
 const first1 = document.getElementById('first');
 const names = document.getElementById('names');
@@ -28,6 +29,8 @@ const sort1 = document.getElementById('sort1');
 const sort2 = document.getElementById('sort2');
 const sort3 = document.getElementById('sort3');
 const sort4 = document.getElementById('sort4');
+const dark = document.getElementById('dark');
+const light = document.getElementById('light');
 
 const characters = [
 	{
@@ -65,8 +68,8 @@ const characters = [
 const name = characters.map((character) => character.name);
 m1.innerHTML = name.toString();
 //2. Get array of all heights
-const high = characters.map((character) => character.height);
-m2.innerHTML = high.toString();
+const high1 = characters.map((character) => character.height);
+m2.innerHTML = high1.toString();
 //3. Get array of objects with just name and height properties//
 const minified = characters.map((character) => ({
 	name: character.name,
@@ -171,3 +174,11 @@ s3.innerText = taller200;
 //4. Is there at least one character that has mass less than 50?
 const mass50 = characters.some((character) => character.mass < 50);
 s4.innerText = mass50;
+
+dark.addEventListener('click', () => {
+	document.documentElement.style.setProperty('--background-color', '#462e49');
+});
+
+light.addEventListener('click', () => {
+	document.documentElement.style.setProperty('--background-color', '#a1887f');
+});

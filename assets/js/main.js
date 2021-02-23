@@ -9,8 +9,15 @@ const responce = document.querySelector('.responce');
 const high = document.querySelector('.highlight');
 let stringer = document.getElementById('timeless');
 let timi = document.getElementById('timeless');
-
+const prime = document.querySelector('.prime');
+const blog = document.querySelector('.blog');
+const page3 = document.querySelector('.page3');
+const page4 = document.querySelector('.page4');
+const copyr = document.querySelector('.copy');
 /////////////////////////////////////////////////////
+
+let yer = new Date();
+copyr.innerHTML = `\u00A92019 - ${yer.getFullYear()}`; //copywright
 
 for (let i = 0; i < document.links.length; i++) {
 	//this highlights the current active link
@@ -59,7 +66,7 @@ function validTime() {
 		The hours are <b>${ho}</b> and the minutes are <b>${minnie}</b>`;
 
 		if (hours <= 24 && minutes <= 59) {
-			timi.style.background = '#C67713';
+			timi.style.background = '#0af820';
 			timi.style.textShadow = '1px 1px 1px #fff';
 		} else {
 			timi.style.background = '#ff0000';
@@ -90,5 +97,11 @@ const dar = arr.toString();
 //console.log(dar);
 const silly = arr.concat(maple);
 //console.log(silly);
+//
+
+if (prime != null) prime.innerHTML = 'This is Prime';
+else if (blog != null) blog.innerHTML = 'This is the Blog';
+else if (page3 != null) page3.innerHTML = 'This is page 3';
+else if (page4 != null) page4.innerHTML = 'This is page 4';
 
 //@prepros-append script.js

@@ -1,16 +1,18 @@
 /**
  *  Used for page 4 main
  */
-
 'use strict';
+
 // using a dataset attribute
 // div id="theDiv" data-name="Brad" data-car="Mustang"
-
+const email = document.getElementById('email');
+let backg = document.getElementById('content3');
+const colors = document.querySelector('.colors');
 const sets = document.getElementById('theDiv');
-const name = sets.dataset.name;
+const name1 = sets.dataset.name;
 const car = sets.dataset.car;
 const list = document.createElement('p');
-const listing = `${name} drives a ${car}`;
+const listing = `${name1} drives a ${car}`;
 //create the element "P" and add the sentence with datasets to it
 list.append(listing);
 sets.appendChild(list);
@@ -40,6 +42,8 @@ function getStorage() {
 		getStore();
 	} else {
 		practice = JSON.parse(localStorage.getItem('page'));
+		showLength.innerHTML = `The Array length is ${practice.length} items`;
+		console.log(practice);
 	}
 	return practice;
 }
@@ -47,9 +51,6 @@ function getStorage() {
 function pusher(added) {
 	practice.push(added);
 	localStorage.setItem('page', JSON.stringify(practice));
-	console.log(practice.toString());
-	showLength.innerHTML = practice.length;
-	//displayArr();
 }
 
 function displayArr(mov) {
@@ -61,7 +62,7 @@ function displayArr(mov) {
 function empty() {
 	inserts.value = '';
 }
-
+//shift the array
 shifty.addEventListener('click', (e) => {
 	e.preventDefault();
 	practice.shift();
@@ -80,8 +81,23 @@ submit.addEventListener('click', (e) => {
 	empty();
 });
 
+//this displays the words or letters I type
 inserts.addEventListener('keyup', () => {
 	let letters = inserts.value;
-	// console.log(letters);
 	space.innerHTML = letters;
 });
+
+function createColor() {
+	const randl = Math.random()
+		.toString(16)
+		.substr(2, 6);
+	let randall = `#${randl}`;
+	colors.innerHTML = randall;
+	backg.style.backgroundColor = randall;
+}
+createColor();
+//console.log(randi);
+
+// if (email === document.activeElement) {
+// 	email.style.backgroundColor = randi;
+// }

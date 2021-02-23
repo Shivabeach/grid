@@ -36,3 +36,10 @@ switch (day) {
   default:
     doc.innerHTML = 'No day is a good day';
 }
+
+$(function() {
+  $('A[rel="external"]').click(function() {
+    window.open($(this).attr('href'));
+    return false;
+  });
+});

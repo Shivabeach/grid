@@ -1,23 +1,28 @@
 h1
-	font-size: 2.5rem
+	font-size: px-to-rem($h1-font-size)
 	margin-bottom: .3em
 	font-family: dulcelin
 
 h2
-	font-size: 2rem
+	font-size: px-to-rem($h2-font-size)
 	margin-bottom: .3em
 
 h3
-	font-size: 1.75rem
+	font-size: px-to-rem($h3-font-size)
+	text-shadow: 1px 1px 2px $milano-red
+	font-stretch: 125%
+	font-weight: 800
+	letter-spacing: 2px
+	color: $gen2
 
 h4
-	font-size: 1.5rem
+	font-size: px-to-rem($h4-font-size)
 	margin: 5px 0
 	color: $eggs
 	font-family: $font-stack-garamond
 
 h5
-	font-size: 1.25rem
+	font-size: px-to-rem($h5-font-size)
 
 h6
 	font-size: 1rem
@@ -56,3 +61,5 @@ hr
 	padding: 0
 	color: $green6
 
+span
+	color: $gen7

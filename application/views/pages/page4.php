@@ -27,26 +27,31 @@
 			</div>
 			<div id="break">
 				<div class="form">
-				<input type="text" id="email" class="form__input" autocomplete="off" placeholder=" ">
-				<label for="email" class="form__label">EMAIL</label>
-			</div>
+					<input type="text" id="email" class="form__input" autocomplete="off" placeholder=" ">
+					<label for="email" class="form__label">EMAIL</label>
+				</div>
 			</div>
 
 		</main>
 
-		<div id="content3" class="kobi"><div id="locate"></div></div>
+		<div id="content3">
+			<div id="locate"></div>
+			<span class="colors"></span>
+
+		</div>
 
 		<div id="content1" class="indigo3">
+			<div class="page4"></div>
 			content 1
 
 			<div id="theDiv" data-name="Brad" data-car="Mustang">
 				<p>This is a dataset example</p>
 			</div>
-
+		<p class="copy"></p>
 		</div>
 
 		<div id="content2" class="green5">
-			content 2
+			<div>content 2</div>
 
 			<p>Using a dataset property in a paragraph(see above section)</p>
 

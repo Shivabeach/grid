@@ -18,6 +18,7 @@ let clipped = document.querySelector('.clipped');
 const max = document.querySelector('.max');
 const docurl = document.getElementById('fblock1');
 const docmode = document.getElementById('fblock2');
+const randlin = document.querySelector('.random');
 
 let theArray = [21, 20, -30, -10, 20, 45, 4];
 
@@ -81,3 +82,6 @@ submit.addEventListener('click', (e) => {
 	maxNum();
 	clear();
 });
+
+const rand = Math.round(Math.random() * 20);
+randlin.innerText = rand;

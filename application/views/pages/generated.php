@@ -1,4 +1,4 @@
-<body>
+<body id="gen">
   <div class="grid">
     <div class="span-col-4">
       <nav>
@@ -68,16 +68,21 @@
           <div id="s4"></div>
       </div>
       <div class="span-col-2">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque tempora, commodi fugit porro ex similique laborum, eveniet vitae error suscipit eum in minima illum ratione, esse eligendi, sapiente molestiae aspernatur veniam. Cum repellat facilis ullam vero amet aliquam animi ad.</p>
+        <p class="highlight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque tempora, commodi fugit porro ex similique laborum, eveniet vitae error suscipit eum in minima illum ratione, esse eligendi, sapiente molestiae aspernatur veniam. Cum repellat facilis ullam vero amet aliquam animi ad.</p>
       </div>
       <!-- <div>Item 6</div> -->
       <div class="span-col-2">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti maxime saepe aspernatur in delectus sint distinctio provident beatae voluptate aperiam dolorem, exercitationem fuga inventore, repellendus iure ad quidem sit, adipisci soluta libero, nostrum placeat. Magnam ipsum minus voluptates numquam.</p>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic excepturi consequuntur natus, cupiditate voluptatibus pariatur quasi commodi praesentium? Nulla delectus veniam, unde, animi suscipit eligendi facere odit voluptates veritatis porro dolor, maxime recusandae sequi, consectetur ea iste voluptatum distinctio similique?</p>
       </div>
-      <div class="span-col-2"><p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Ipsam vitae saepe iure consequatur architecto provident iusto adipisci et delectus aspernatur.</p></div>
+      <div class="span-col-2">
+        <p class="copy"></p>
+      </div>
       <!-- <div>Item 8</div> -->
-      <div class="span-col-4">Item 9</div>
+      <div class="span-col-4">
+        <button id="dark">Dark</button> <button id="light">Light</button>
+        <p><a href="https://www.youtube.com/watch?v=3LOEGS4qcRM&list=PLDlWc9AfQBfZGZXFb_1tcRKwtCavR7AfT" rel="external">James Quick tutorial</a></p>
+      </div>
     </div>
   <script src="<?php echo base_url('assets/js/generated-dist.js');?>""></script>
 

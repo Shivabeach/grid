@@ -16,6 +16,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
 	<link rel="manifest" href="/site.webmanifest">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer></script>
+  <script src="<?php echo base_url('assets/js/main-dist.js');?>" defer></script>
   <script>
     /*to prevent Firefox FOUC, this must be here*/
     let FF_FOUC_FIX;
