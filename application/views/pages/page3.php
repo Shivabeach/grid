@@ -52,12 +52,12 @@
 			<div class="responce"></div>
 			<div id="locate"></div>
 		</div>
-		<div id="content2" class="green5">
+		<div id="content2" class="brow">
 			<div class="page3"></div>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum modi, a veniam quis nobis sunt impedit officiis delectus dignissimos quidem velit nihil porro aut facere sapiente? Eveniet obcaecati blanditiis quo quisquam voluptate ut doloremque quasi a, repellat veritatis, harum vitae.</p>
 
 		</div>
-		<div id="content3" class="deco">
+		<div id="content3" class="purp">
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum modi, a veniam quis nobis sunt impedit officiis delectus dignissimos quidem velit nihil porro aut facere sapiente? Eveniet obcaecati blanditiis quo quisquam voluptate ut doloremque quasi a, repellat veritatis, harum vitae.</p>
 			<p class="copy"></p>
 		</div>

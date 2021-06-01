@@ -38,7 +38,7 @@ const limit4 = {
 	inputs: [-25, 150, 160, -114, 68, 89, -159, 258, -34, -147, 500],
 };
 const accounts = [limit1, limit2, limit3, limit4];
-//console.log(accounts);
+console.log(accounts);
 //display all deposits and withdrawals
 const displayMovements = function(inputs) {
 	moveIn.innerHTML = '';

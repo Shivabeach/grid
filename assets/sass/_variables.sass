@@ -1,52 +1,67 @@
+//lighten,compliment
+
 :root
 	--font-weight: 700
 	--decoration: underline
 	--bottom: 3px solid green
-
+//(?<Month>\d{1,2})/(?<Day>\d{1,2})/(?<Year>(?:\d{4}|\d{2}))
 $mobile  : 568px
 $tablet  : 768px - 1px
 $timeline: 1000px
 $desktop : 1024px
+$gasp: hsl(120, 50%, 50%)
+
 
 $gen:  #597d40
 $gen1: #2a8770
-$gen2: #266dab
-$gen3: #7073e2
-$gen4: #d8cdd3
-$gen5: #1f677f
-$gen6: #ae5498
 $gen7: #0af820
-$gen8: #f9c59b
-$gen9: #898cf8
+$gen5: #1f677f
+$gen4: #d8cdd3
+$gen6: #ae5498
 $gen10: #521B29
-$gen11: #080b4a
+$gen18: #740334
+$gen15: #e60832
+$gen20: #e35251
+$gen8: #f9c59b
 $gen12: #f8740b
 $gen13: #e77d51
+$gen17: #e77659
+
+$gen9: #898cf8
+$gen2: #266dab
+$gen3: #7073e2
 $gen14: #6724e1
-$gen15: #e60832
+$gen16: #2d2aa4
+$gen19: #261fcc
+$gen21: #3209d0
+$gen11: #080b4a
 
+$gen11-in: invert($gen11)
+$gen10-in: invert($gen10)
 
-$YinMn: #2E5090
-$bluer: rgb(45.82, 79.92, 143.51)
-$bluest: hsl(219, 51.6%, 37.1%)
+$YinMn      : #2E5090
+$bluer      : rgb(45.82, 79.92, 143.51)
+$bluest     : hsl(219, 51.6%, 37.1%)
 
 //purple
-$purp1: hsl(261, 88%, 25%)
-$purp2: hsl(261, 88%, 57%)
-$purp3: hsl(261, 88%, 70%)
-$purp4: hsl(261, 88%, 80%)
-$unknown: hsl(60, 75%, 60%)
+$purp1      : hsl(261, 88%, 25%)
+$purp2      : hsl(261, 88%, 57%)
+$purp3      : hsl(261, 88%, 70%)
+$purp4      : hsl(261, 88%, 80%)
+$unknown    : hsl(60, 75%, 60%)
 
-$purp5: #3226B5
-$purp6: lighten($purp5, 5%)
-$purp: #22153F
-$purp11: #381B6C
-$purp33: #20123A
+$purp5      : #3226B5
+$purp6      : lighten($purp5, 5%)
+$purp       : #22153F
+$purp11     : #381B6C
+$purp33     : #20123A
 $deep-purple: #462e49
 
 $car1: #26295B
 $car2: #0416C1
 $car3: #1E1A3C
+
+$beige: beige
 
 $skyblue: #4A85D1
 $jeans  : #3d61b5
@@ -105,14 +120,14 @@ $visited        : mix($antique-ruby, $hover, 70)
 $mixer          : mix($clam-shell, $hover, 50)
 $red            : #ff0000
 
-$gray4: #ced4da
+$gray4: hsl(180.0,13.95%,83.14%)
 $gray5: #adb5bd
 $gray6: #868e96
 $gray7: #495057
 $gray8: #343a40
 $gray9: #212529
 
-$indigo1: #dbe4ff
+$indigo1: hsl(180.0,100.0%,92.94%)
 $indigo2: #bac8ff
 $indigo3: #91a7ff
 $indigo4: #748ffc
@@ -123,7 +138,7 @@ $indigo8: #3b5bdb
 $indigo9: #364fc7
 
 
-$orange1: #ffe8cc
+$orange1: hsl(32.94,100.0%,90.0%)
 $orange2: #ffd8a8
 $orange3: #ffc078
 $orange4: #ffa94d
@@ -141,7 +156,7 @@ $green5: #51cf66
 $green6: #40c057
 $green7: #37b24d
 $green8: #2f9e44
-$green9: #2b8a3e
+$green9: hsl(132.0,52.49%,35.49%)
 
 $blue2: #a5d8ff
 $blue3: #74c0fc

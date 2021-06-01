@@ -1,0 +1,6 @@
+$class-colors: (deep-purple: #080b4a, dk-brown: #521B29, lt-purple: #261fcc, orange-in: #FE5532)
+
+@each $name, $color in $class-colors
+	.bg-#{$name}
+		background: $color
+		color: invert($color)

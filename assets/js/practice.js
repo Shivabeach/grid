@@ -1,6 +1,12 @@
 //this file is not loaded on any pages
 
 'use strict';
+
+// Listen for `DOMContentLoaded` event
+document.addEventListener('DOMContentLoaded', (e) => {
+	console.log(`Document is ready!`);
+});
+
 //get all keys in local storage
 for (const key in localStorage) {
 	console.log(`${key}: ${localStorage.getItem(key)}`);
@@ -27,7 +33,6 @@ const user = { name: 'Alex', job: 'Software Engineer' };
 localStorage.setItem('user', JSON.stringify(user));
 console.log(localStorage.getItem('user'));
 // {"name":"Alex","job":"Software Engineer"}
-
 // Retrieve the JSON string
 const userStr = localStorage.getItem('user');
 

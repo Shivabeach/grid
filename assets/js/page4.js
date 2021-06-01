@@ -1,7 +1,11 @@
 /**
- *  Used for page 4 main
+ * Used for page 4 main
+ *
+ * @format
+ * js file for page 4
  */
-'use strict';
+
+import { properCase, log } from './utils.js';
 
 // using a dataset attribute
 // div id="theDiv" data-name="Brad" data-car="Mustang"
@@ -9,9 +13,11 @@ const email = document.getElementById('email');
 let backg = document.getElementById('content3');
 const colors = document.querySelector('.colors');
 const sets = document.getElementById('theDiv');
+//console.log(sets.dataset);
 const name1 = sets.dataset.name;
 const car = sets.dataset.car;
 const list = document.createElement('p');
+//create content
 const listing = `${name1} drives a ${car}`;
 //create the element "P" and add the sentence with datasets to it
 list.append(listing);
@@ -37,13 +43,18 @@ function getStore() {
 	}
 }
 
+const alphaSort = (array) => {
+	if (!array.length) return;
+	return array.sort();
+};
+
 function getStorage() {
 	if (localStorage.getItem('page') === null) {
 		getStore();
 	} else {
 		practice = JSON.parse(localStorage.getItem('page'));
 		showLength.innerHTML = `The Array length is ${practice.length} items`;
-		console.log(practice);
+		log(practice);
 	}
 	return practice;
 }
@@ -54,7 +65,8 @@ function pusher(added) {
 }
 
 function displayArr(mov) {
-	practice.forEach(function(mov, i) {
+	alphaSort(practice).reverse();
+	practice.forEach(function (mov, i) {
 		const html = `<li>${mov}</li>`;
 		break1.insertAdjacentHTML('afterbegin', html);
 	});
@@ -88,9 +100,7 @@ inserts.addEventListener('keyup', () => {
 });
 
 function createColor() {
-	const randl = Math.random()
-		.toString(16)
-		.substr(2, 6);
+	const randl = Math.random().toString(16).substr(2, 6);
 	let randall = `#${randl}`;
 	colors.innerHTML = randall;
 	backg.style.backgroundColor = randall;

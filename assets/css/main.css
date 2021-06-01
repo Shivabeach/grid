@@ -27,10 +27,6 @@ body {
           box-sizing: inherit;
 }
 
-:root {
-  --main-radius: 5px;
-}
-
 *,
 *::before,
 *::after {
@@ -414,6 +410,37 @@ a:active {
 
 .green5 {
   background: #51cf66;
+}
+
+.purp {
+  background-color: #080b4a;
+  color: #f7f4b5;
+  text-shadow: 1px 1px 1px #e35251;
+}
+
+.brow {
+  background-color: #521B29;
+  color: #ade4d6;
+}
+
+.bg-deep-purple {
+  background: #080b4a;
+  color: #f7f4b5;
+}
+
+.bg-dk-brown {
+  background: #521B29;
+  color: #ade4d6;
+}
+
+.bg-lt-purple {
+  background: #261fcc;
+  color: #d9e033;
+}
+
+.bg-orange-in {
+  background: #FE5532;
+  color: #01aacd;
 }
 
 /* 3 modules */
@@ -1091,10 +1118,6 @@ nav {
 
 main {
   background-image: url("../images/eggshell.jpg");
-}
-
-#content2 {
-  color: #593E3E;
 }
 
 nav,
