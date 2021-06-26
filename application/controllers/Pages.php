@@ -44,6 +44,11 @@ class Pages extends CI_Controller {
 		$data['header'] = "Generated";
 		$this->load->view("template/template", $data);
 	}
+	public function jso() {
+		$data['title'] = "JSON";
+		$data['content'] = "pages/ana.html";
+		$this->load->view("pages/ana.html", $data);
+	}
 
 }
 

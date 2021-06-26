@@ -65,8 +65,8 @@ const characters = [
 
 //***MAP***
 //1. Get array of all names
-const name = characters.map((character) => character.name);
-m1.innerHTML = name.toString();
+const HeroName = characters.map((character) => character.name);
+m1.innerHTML = heroName.toString();
 //2. Get array of all heights
 const high1 = characters.map((character) => character.height);
 m2.innerHTML = high1.toString();
