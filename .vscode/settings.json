@@ -4,6 +4,17 @@
     "window.activeBorder": "#9ccc65",
     "window.inactiveBorder": "#82b1ff",
     "activityBar.activeBorder": "#07000f",
-    "activityBar.activeBackground": "#ff0000"
+    "[codeSTACKr Theme]": {
+      "activityBar.activeBackground": "#87B6E6",
+      "tab.activeBackground": "#0af820",
+      "tab.inactiveBackground": "#898cf8",
+      "tab.activeForeground": "#000",
+      "tab.inactiveForeground": "#000"
+    },
+    "activityBar.activeBackground": "#ff0000",
+    "tab.activeBackground": "#f9c59b",
+    "tab.inactiveBackground": "#898cf8",
+    "tab.activeForeground": "#000",
+    "tab.inactiveForeground": "#000"
   }
 }

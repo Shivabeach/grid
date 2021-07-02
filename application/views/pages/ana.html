@@ -18,10 +18,18 @@
       padding-left: 5px;
       vertical-align: baseline;
     }
+    .link2,
+    li {
+      display: inline;
+    }
+    button {
+      display: block;
+    }
   </style>
 </head>
 </html>
 	<body>
+    <?php $this->load->view("menu/main_menu");?>
 		<button onclick="showCountries()">Show countries</button>
     <div id="feed">
 

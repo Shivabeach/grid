@@ -1,4 +1,9 @@
-/** James Quick https://www.youtube.com/watch?v=3LOEGS4qcRM&list=PLDlWc9AfQBfZGZXFb_1tcRKwtCavR7AfT&index=1&t=8s */
+/**
+ * James Quick https://www.youtube.com/watch?v=3LOEGS4qcRM&list=PLDlWc9AfQBfZGZXFb_1tcRKwtCavR7AfT&index=1&t=8s
+ *
+ * @format
+ */
+
 'use strict';
 const first1 = document.getElementById('first');
 const names = document.getElementById('names');
@@ -101,7 +106,7 @@ r3.innerText = JSON.stringify(charactersByEyeColor);
 //4. Get total number of characters in all the character names
 const totalNameCharacters = characters.reduce(
 	(acc, cur) => acc + cur.name.length,
-	0,
+	0
 );
 r4.innerText = totalNameCharacters;
 
@@ -111,7 +116,7 @@ const charactersByMass = characters.filter((character) => character.mass > 100);
 f1.innerHTML = JSON.stringify(charactersByMass);
 //2. Get characters with height less than 200
 const charactersLessMass = characters.filter(
-	(character) => character.mass < 200,
+	(character) => character.mass < 200
 );
 f2.innerHTML = JSON.stringify(charactersLessMass);
 //3. Get all male characters
@@ -145,7 +150,7 @@ sort4.innerText = JSON.stringify(byGender);
 //***EVERY***
 //1. Does every character have blue eyes?
 const allBlueEyes = characters.every(
-	(character) => character.eye_color === 'blue',
+	(character) => character.eye_color === 'blue'
 );
 e1.innerText = allBlueEyes;
 //2. Does every character have mass more than 40?
@@ -161,7 +166,7 @@ e4.innerText = allMale;
 //***SOME***
 //1. Is there at least one male character?
 const isThereOneMale = characters.some(
-	(character) => character.gender === 'male',
+	(character) => character.gender === 'male'
 );
 s1.innerText = isThereOneMale;
 //2. Is there at least one character with blue eyes?
