@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?php=$title;?></title>
+  <title><?php echo $title;?></title>
   <style>
     #feed {
       column-count: 5;
@@ -30,6 +30,10 @@
 </html>
 	<body>
     <?php $this->load->view("menu/main_menu");?>
+    <div>
+      <h3><span id="time-left"></span>
+      <button id="start-button">Start</button></h3>
+    </div>
 		<button onclick="showCountries()">Show countries</button>
     <div id="feed">
 

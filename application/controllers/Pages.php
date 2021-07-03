@@ -46,7 +46,8 @@ class Pages extends CI_Controller {
 	}
 	public function jso() {
 		$data['title'] = "JSON";
-		$data['content'] = "pages/ana.html";
+		// $data['header']
+		//$data['content'] = "pages/ana.html";
 		$this->load->view("pages/ana.html", $data);
 	}
 
