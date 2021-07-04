@@ -11,6 +11,9 @@
       "tab.activeForeground": "#000",
       "tab.inactiveForeground": "#000"
     },
+    "[Andromeda]": {
+      "editor.background": "#080b4a"
+    },
     "activityBar.activeBackground": "#ff0000",
     "tab.activeBackground": "#f9c59b",
     "tab.inactiveBackground": "#898cf8",
