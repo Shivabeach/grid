@@ -26,7 +26,7 @@
 	border-radius: $rad
 
 =grid($cols, $mgn)
-	float:left
+	float: left
 	margin-right: $mgn
 	margin-bottom: $mgn
 	width: (100 - ($cols - 1) * $mgn) / $cols
@@ -39,7 +39,6 @@
 	border-radius: $radius
 	height: $height
 	width: $width
-
 
 =timeline
 	@media screen and (max-width: $timeline)
@@ -59,7 +58,6 @@
 	$vw-context: (1000*.01) * 1px
 	@return ($target/$vw-context) * 1vw
 
-
 @function strip-units ($length)
 	$munch: $length / (( $length * 0 ) + 1)
 	@return $munch
@@ -69,7 +67,7 @@
 	$rem: ($value/$base-font-size) * 1rem
 	@return $rem
 
-=outline($style,$color,$width,$offset)
+@mixin outline($style,$color,$width,$offset)
 	outline-style: $style
 	outline-color: $color
 	outline-width: $width

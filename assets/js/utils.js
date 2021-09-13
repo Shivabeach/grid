@@ -45,3 +45,9 @@ export const sanitizeInput = (inputValue) => {
 };
 // const cleanInput = sanitizeInput(stringtoclean);
 // console.log(cleanInput);
+
+export const addUp = (array) => {
+	array.reduce((accumulator, current) => {
+		return current + accumulator;
+	}, 0);
+};

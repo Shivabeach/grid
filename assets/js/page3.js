@@ -1,7 +1,10 @@
 /**
- *  For the Prime page only
+ * For the Prime page only
  *  \u0024 dollar sign
+ *
+ * @format
  */
+
 'use strict';
 
 const name = document.querySelector('.name');
@@ -40,9 +43,9 @@ const limit4 = {
 const accounts = [limit1, limit2, limit3, limit4];
 console.log(accounts);
 //display all deposits and withdrawals
-const displayMovements = function(inputs) {
+const displayMovements = function (inputs) {
 	moveIn.innerHTML = '';
-	inputs.forEach(function(mov, i) {
+	inputs.forEach(function (mov, i) {
 		const type = mov > 0 ? 'Deposit' : 'Withdrawal';
 		const html = `
 <div class="movements-in">
@@ -53,12 +56,12 @@ const displayMovements = function(inputs) {
 	});
 };
 //display the balance using reduce
-const displayBalance = function(inputs) {
+const displayBalance = function (inputs) {
 	let totals = inputs.reduce((arr, cur) => arr + cur, 0);
 	balance.innerText = `\u0024${totals}`;
 };
 
-const showDeposits = function(acc) {
+const showDeposits = function (acc) {
 	let deposits = acc.inputs
 		.filter((mov) => mov > 0)
 		.reduce((arr, cur) => arr + cur, 0);
@@ -69,7 +72,7 @@ const showDeposits = function(acc) {
 	withdraw.textContent = `\u0024${withdraws}`;
 };
 let currentAccount;
-login.addEventListener('click', function(e) {
+login.addEventListener('click', function (e) {
 	e.preventDefault();
 	currentAccount = accounts.find((acc) => acc.name === inputName.value);
 	if (currentAccount.name === inputName.value) {
