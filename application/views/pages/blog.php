@@ -4,7 +4,7 @@
 			<?php $this->load->view("menu/main_menu");?>
 		</nav>
 		<main class="mori">
-
+			<img src="../assets\images\SenaeMori.jpg" alt="Alt">
 
 		</main>
 		<div id="sidebar">Sidebar</div>

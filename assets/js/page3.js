@@ -1,5 +1,5 @@
 /**
- * For the Prime page only
+ * @description For the Prime page only
  *  \u0024 dollar sign
  *
  * @format

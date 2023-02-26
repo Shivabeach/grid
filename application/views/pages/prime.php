@@ -11,7 +11,7 @@
 				reduced.innerHTML = totals;<br>
 			}</p>
 			<p>function maxNum() {<br>
-				const maxx = theArray.reduce((acc, cur, i, arr) => (acc > cur ? acc : cur),10,);<br>
+				const maxx = theArray.reduce((acc, cur, i, arr) => (acc > cur ? acc : cur),null,);<br>
 				max.innerHTML = maxx;<br>
 			}</p>
 			<p>
@@ -46,6 +46,8 @@
 			<div>Reduced: <span class="reduced"></span>  </div>
 			<div>Mapped and filtered: <span class="clipped"> </span></div>
 			<div>Max: <span class="max"></span></div>
+			<div>Min: <span class="min"></span></div>
+
 		</div>
 		<div id="content4" class="prim">Content 4</div>
 		<footer class="prime-foot">

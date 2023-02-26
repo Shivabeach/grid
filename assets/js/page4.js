@@ -47,7 +47,12 @@ const alphaSort = (array) => {
 	if (!array.length) return;
 	return array.sort();
 };
-
+/**
+ * @description get stored array from page storage
+ * @author Brad
+ * @date 2021-10-03
+ * @returns
+ */
 function getStorage() {
 	if (localStorage.getItem('page') === null) {
 		getStore();
@@ -58,12 +63,23 @@ function getStorage() {
 	}
 	return practice;
 }
-
+/**
+ * @description adds item to the array, then stores it in local storage
+ * @author Brad
+ * @date 2021-10-03
+ * @param {string} added
+ */
 function pusher(added) {
 	practice.push(added);
 	localStorage.setItem('page', JSON.stringify(practice));
 }
 
+/**
+ * @description displays the array on page 4
+ * @author Brad
+ * @date 2021-10-03
+ * @param {array} mov
+ */
 function displayArr(mov) {
 	alphaSort(practice).reverse();
 	practice.forEach(function (mov, i) {
@@ -81,10 +97,12 @@ shifty.addEventListener('click', (e) => {
 	localStorage.setItem('page', JSON.stringify(practice));
 });
 
+
 addEventListener('DOMContentLoaded', () => {
 	getStorage();
 	displayArr();
 });
+
 
 submit.addEventListener('click', (e) => {
 	e.preventDefault();
@@ -99,6 +117,11 @@ inserts.addEventListener('keyup', () => {
 	space.innerHTML = letters;
 });
 
+/**
+ * @description creates a random HEX code for a random color
+ * @author Brad
+ * @date 2021-10-03
+ */
 function createColor() {
 	const randl = Math.random().toString(16).substr(2, 6);
 	let randall = `#${randl}`;

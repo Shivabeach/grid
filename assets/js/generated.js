@@ -1,5 +1,5 @@
 /**
- * James Quick https://www.youtube.com/watch?v=3LOEGS4qcRM&list=PLDlWc9AfQBfZGZXFb_1tcRKwtCavR7AfT&index=1&t=8s
+ * @description James Quick https://www.youtube.com/watch?v=3LOEGS4qcRM&list=PLDlWc9AfQBfZGZXFb_1tcRKwtCavR7AfT&index=1&t=8s
  *
  * @format
  */
@@ -37,48 +37,67 @@ const sort4 = document.getElementById('sort4');
 const dark = document.getElementById('dark');
 const light = document.getElementById('light');
 
+let morons = {
+  name: 'name',
+  height: 'height',
+  mass: 'mass',
+};
+let user002 = Object.create(morons);
+user002.name = 'John';
+user002.height = 125;
+user002.mass = 80;
+
+let user003 = Object.create(morons);
+user002.name = 'Mary';
+user002.height = 100;
+user002.mass = 80;
+
+console.log(user003, user002);
+
 const characters = [
-	{
-		name: 'Luke Skywalker',
-		height: 172,
-		mass: 77,
-		eye_color: 'blue',
-		gender: 'male',
-	},
-	{
-		name: 'Darth Vader',
-		height: 202,
-		mass: 136,
-		eye_color: 'yellow',
-		gender: 'male',
-	},
-	{
-		name: 'Leia Organa',
-		height: 150,
-		mass: 49,
-		eye_color: 'brown',
-		gender: 'female',
-	},
-	{
-		name: 'Anakin Skywalker',
-		height: 188,
-		mass: 84,
-		eye_color: 'blue',
-		gender: 'male',
-	},
+  {
+    name: 'Luke Skywalker',
+    height: 172,
+    mass: 77,
+    eye_color: 'blue',
+    gender: 'male',
+  },
+  {
+    name: 'Darth Vader',
+    height: 202,
+    mass: 136,
+    eye_color: 'yellow',
+    gender: 'male',
+  },
+  {
+    name: 'Leia Organa',
+    height: 150,
+    mass: 49,
+    eye_color: 'brown',
+    gender: 'female',
+  },
+  {
+    name: 'Anakin Skywalker',
+    height: 188,
+    mass: 84,
+    eye_color: 'blue',
+    gender: 'male',
+  },
 ];
+
+//console.log(characters);
 
 //***MAP***
 //1. Get array of all names
 const HeroName = characters.map((character) => character.name);
-m1.innerHTML = heroName.toString();
+m1.innerHTML = HeroName.toString();
 //2. Get array of all heights
 const high1 = characters.map((character) => character.height);
 m2.innerHTML = high1.toString();
 //3. Get array of objects with just name and height properties//
 const minified = characters.map((character) => ({
-	name: character.name,
-	height: character.height,
+  name: character.name,
+  height: character.height,
 }));
 m3.innerText = JSON.stringify(minified);
 //4. Get array of all first names
@@ -94,19 +113,19 @@ const totalHeight = characters.reduce((acc, cur) => acc + cur.height, 0);
 r2.innerHTML = `The total height is ${totalHeight}`;
 //3. Get total number of characters by eye color
 const charactersByEyeColor = characters.reduce((acc, cur) => {
-	const color = cur.eye_color;
-	if (acc[color]) {
-		acc[color]++;
-	} else {
-		acc[color] = 1;
-	}
-	return acc;
+  const color = cur.eye_color;
+  if (acc[color]) {
+    acc[color]++;
+  } else {
+    acc[color] = 1;
+  }
+  return acc;
 }, {});
 r3.innerText = JSON.stringify(charactersByEyeColor);
 //4. Get total number of characters in all the character names
 const totalNameCharacters = characters.reduce(
-	(acc, cur) => acc + cur.name.length,
-	0
+  (acc, cur) => acc + cur.name.length,
+  0
 );
 r4.innerText = totalNameCharacters;
 
@@ -116,7 +135,7 @@ const charactersByMass = characters.filter((character) => character.mass > 100);
 f1.innerHTML = JSON.stringify(charactersByMass);
 //2. Get characters with height less than 200
 const charactersLessMass = characters.filter(
-	(character) => character.mass < 200
+  (character) => character.mass < 200
 );
 f2.innerHTML = JSON.stringify(charactersLessMass);
 //3. Get all male characters
@@ -135,22 +154,22 @@ const sortByHeight = characters.sort((a, b) => a.height - b.height);
 sort2.innerText = JSON.stringify(sortByHeight);
 //3. Sort by name
 const byName = characters.sort((a, b) => {
-	if (a.name < b.name) return -1;
-	return 1;
+  if (a.name < b.name) return -1;
+  return 1;
 });
 sort3.innerText = JSON.stringify(byName);
 
 //4. Sort by gender
 const byGender = characters.sort((a, b) => {
-	if (a.gender === 'female') return -1;
-	return 1;
+  if (a.gender === 'female') return -1;
+  return 1;
 });
 sort4.innerText = JSON.stringify(byGender);
 
 //***EVERY***
 //1. Does every character have blue eyes?
 const allBlueEyes = characters.every(
-	(character) => character.eye_color === 'blue'
+  (character) => character.eye_color === 'blue'
 );
 e1.innerText = allBlueEyes;
 //2. Does every character have mass more than 40?
@@ -166,7 +185,7 @@ e4.innerText = allMale;
 //***SOME***
 //1. Is there at least one male character?
 const isThereOneMale = characters.some(
-	(character) => character.gender === 'male'
+  (character) => character.gender === 'male'
 );
 s1.innerText = isThereOneMale;
 //2. Is there at least one character with blue eyes?
@@ -181,9 +200,9 @@ const mass50 = characters.some((character) => character.mass < 50);
 s4.innerText = mass50;
 
 dark.addEventListener('click', () => {
-	document.documentElement.style.setProperty('--background-color', '#462e49');
+  document.documentElement.style.setProperty('--background-color', '#462e49');
 });
 
 light.addEventListener('click', () => {
-	document.documentElement.style.setProperty('--background-color', '#a1887f');
+  document.documentElement.style.setProperty('--background-color', '#a1887f');
 });

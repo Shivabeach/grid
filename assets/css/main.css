@@ -370,7 +370,7 @@ a:active {
 }
 
 .gum-leaf {
-  background: #B5D6C1;
+  background: #b5d6c1;
 }
 
 .lilac {
@@ -1144,10 +1144,8 @@ footer.prime-foot {
 }
 
 .mori {
-  background-image: url("../images/SenaeMori.jpg");
-  background-repeat: no-repeat;
-  text-align: center;
-  vertical-align: middle;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #content4,

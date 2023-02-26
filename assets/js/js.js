@@ -1,4 +1,7 @@
-/** @format */
+/**
+ * @description
+ *
+ * @format */
 let feed = document.getElementById('feed');
 function showCountries() {
 	let xhr = new XMLHttpRequest();
