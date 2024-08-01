@@ -1,3 +1,5 @@
+/** @format */
+
 'use strict';
 const drinks = document.querySelector('#drinks');
 

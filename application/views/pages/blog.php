@@ -17,6 +17,9 @@
 				<li>Milk</li>
 			</ul>
 
+			<ul class="creation">
+				
+			</ul>
 		</div>
 		<div id="content2" class="kobi">
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum modi, a veniam quis nobis sunt impedit officiis delectus dignissimos quidem velit nihil porro aut facere sapiente? Eveniet obcaecati blanditiis quo quisquam voluptate ut doloremque quasi a, repellat veritatis, harum vitae.</p>

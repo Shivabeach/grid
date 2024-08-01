@@ -97,12 +97,10 @@ shifty.addEventListener('click', (e) => {
 	localStorage.setItem('page', JSON.stringify(practice));
 });
 
-
 addEventListener('DOMContentLoaded', () => {
 	getStorage();
 	displayArr();
 });
-
 
 submit.addEventListener('click', (e) => {
 	e.preventDefault();
