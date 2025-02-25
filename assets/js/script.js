@@ -43,3 +43,9 @@ $(function() {
     return false;
   });
 });
+
+let s = "1000";
+console.log(s)
+let r = +1000
+console.log(r)
+
