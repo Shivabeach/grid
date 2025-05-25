@@ -12,6 +12,8 @@ const text1 = document.createTextNode('Tea also');
 // Append text node to <li> node
 elem.append(text);
 elem1.append(text1);
-// Finally, append <li> to <ul> node
-drinks.append(elem);
-drinks.append(elem1);
+// Finally, append <li> to <ul> node if it exists
+if (drinks) {
+	drinks.append(elem);
+	drinks.append(elem1);
+}
